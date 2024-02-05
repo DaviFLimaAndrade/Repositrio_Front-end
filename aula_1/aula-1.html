@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site com JS</title>
+</head>
+<body>
+    <h1>Olá, mundo! Esta é a minha primeira página.</h1>
+    <script>
+        // Exercicio 1
+        //var numero1 = Number(window.prompt("Digite o numero a ser calculado:"));
+        //var numero2 = Number(window.prompt("Digite o numero a ser calculado:"));
+
+        //var resultado = numero1 - numero2
+        //window.alert("O resultado é: " + resultado)
+
+        // Exercicio 2
+        //var numero = Number(window.prompt("Digite o numero a ser calculado:"));
+        //var numero_dividido = numero / 2;
+
+        //if(numero_dividido % 2 == 0) {
+            //window.alert("De fato é par")
+        //}else{
+            //window.alert("Não é par")
+        //}
+
+        // Exibe a soma das notas em um alerta
+        //window.alert("A subtração das notas é: " + sub);
+
+        // Exercicio 3
+        //var numero1 = Number(window.prompt("Digite o numero a ser calculado:"));
+        //var numero2 = Number(window.prompt("Digite o numero a ser calculado:"));
+
+        //if(numero1 % numero2 == 0 || numero2 % numero1 == 0){
+            //window.alert("O numero é multiplo")
+        //}else{
+            //window.alert("O numero não é multiplo")
+        //}
+
+        //Exercicio 4
+        //var numero1 = Number(window.prompt("Digite o primeiro número:"));
+        //var numero2 = Number(window.prompt("Digite o segundo número:"));
+
+        //var media = 6;
+
+        //if (numero1 % 2 == 0 && numero2 % 2 == 0) {
+            //if (numero1 >= media && numero2 >= media) {
+                //window.alert("As duas notas são pares e estão acima da média.");
+            //} else if (numero1 < media && numero2 > media) {
+                //window.alert("As duas notas são pares e apenas a segunda nota está acima da média.");
+            //} else if (numero1 > media && numero2 < media) {
+                //window.alert("Apenas a primeira nota está acima da média e ambas são pares.");
+            //} else if (numero1 < media && numero2 < media) {
+                //window.alert("As duas notas estão abaixo da média e ambas são pares.");
+            //} else {
+                //window.alert("Pelo menos uma das notas não está acima da média.");
+            //}
+        //} else {
+            //window.alert("Pelo menos uma das notas não é par.");
+        //}
+
+        function calcularIMC() {
+            var peso = Number(window.prompt("Digite o primeiro número:"));
+            var altura = Number(window.prompt("Digite o primeiro número:"));
+
+        if (peso && altura) {
+            var imc = peso / (altura * altura);
+
+            if (imc < 18.5) {
+            window.alert('Você está abaixo do peso.' + imc);
+            } else if (imc >= 18.5 && imc < 25) {
+            window.alert('Seu peso está normal.' + imc);
+            } else if (imc >= 25 && imc < 30) {
+            window.alert('Você está com sobrepeso.' + imc);
+            } else {
+            mensagem += 'Você está obeso.';
+            }
+
+            alert(mensagem);
+        } else {
+            alert('Por favor, insira um valor válido para peso e altura.');
+        }
+        }
+
+    </script>
+</body>
+</html>
