@@ -6,8 +6,12 @@
     <title>Meu primeiro site com JS</title>
 </head>
 <body>
-    <h1>Olá, mundo! Esta é a minha primeira página.</h1>
+    <h1>Aprendendo operações básicas</h1>
     <script>
+
+        // Os exercicios n~~ao estão em ordem pois achei que nâo era para entregar
+        // Peço desculpas e vou tomar mais cuidado de agora em diante
+
         // Exercicio 1
         //var numero1 = Number(window.prompt("Digite o numero a ser calculado:"));
         //var numero2 = Number(window.prompt("Digite o numero a ser calculado:"));
@@ -60,28 +64,102 @@
             //window.alert("Pelo menos uma das notas não é par.");
         //}
 
-        function calcularIMC() {
-            var peso = Number(window.prompt("Digite o primeiro número:"));
-            var altura = Number(window.prompt("Digite o primeiro número:"));
+        // Exercicio 5
+        //     var peso = Number(window.prompt("Digite o primeiro número:"));
+        //     var altura = Number(window.prompt("Digite o primeiro número:"));
 
-        if (peso && altura) {
-            var imc = peso / (altura * altura);
+        // if (peso && altura) {
+        //     var imc = peso / (altura * altura);
 
-            if (imc < 18.5) {
-            window.alert('Você está abaixo do peso.' + imc);
-            } else if (imc >= 18.5 && imc < 25) {
-            window.alert('Seu peso está normal.' + imc);
-            } else if (imc >= 25 && imc < 30) {
-            window.alert('Você está com sobrepeso.' + imc);
-            } else {
-            mensagem += 'Você está obeso.';
-            }
+        //     if (imc < 18.5) {
+        //     window.alert('Você está abaixo do peso: ' + imc);
+        //     } else if (imc >= 18.5 && imc < 25) {
+        //     window.alert('Seu peso está normal: ' + imc);
+        //     } else if (imc >= 25 && imc < 30) {
+        //     window.alert('Você está com sobrepeso: ' + imc);
+        //     } else {
+        //     mensagem += 'Você está obeso.';
+        //     }
 
-            alert(mensagem);
-        } else {
-            alert('Por favor, insira um valor válido para peso e altura.');
-        }
-        }
+        //     alert(mensagem);
+        // } else {
+        //     alert('Por favor, insira um valor válido para peso e altura.');
+        // }
+
+        // Exercicio 6
+
+        //     function ehBissexto(ano) {
+        //     return (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0);
+        // }
+
+        // function verificarAnoBissexto(ano) {
+        //     if (ehBissexto(ano)) {
+        //         return `${ano} é um ano bissexto.`;
+        //     } else {
+        //         return `${ano} não é um ano bissexto.`;
+        //     }
+        // }
+
+        // // Solicitar ao usuário que insira o ano
+        // var ano = Number(window.prompt("Digite o ano:"));
+
+        // // Verificar se o ano é bissexto e exibir o resultado
+        // window.alert(verificarAnoBissexto(ano));
+
+        // Exercicio 7
+
+        //     function converterMoeda(valor, taxa) {
+        //     return valor * taxa;
+        // }
+
+        // // Solicitar ao usuário que insira a taxa de câmbio
+        // var taxaDeCambio = Number(window.prompt("Digite a taxa de câmbio (1 Real Brasileiro = X outra moeda):"));
+
+        // // Solicitar ao usuário que insira o valor desejado em Real Brasileiro
+        // var valorDesejadoEmReal = Number(window.prompt("Digite o valor desejado em Real Brasileiro:"));
+
+        // // Calcular o valor convertido
+        // var valorConvertido = converterMoeda(valorDesejadoEmReal, taxaDeCambio);
+
+        // // Formatar os valores para representar como moeda
+        // var valorDesejadoFormatado = valorDesejadoEmReal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+        // var valorConvertidoFormatado = valorConvertido.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+        // // Exibir o resultado
+        // window.alert(`Com a taxa de câmbio de ${taxaDeCambio}, ${valorDesejadoFormatado} seria equivalente a ${valorConvertidoFormatado} na outra moeda.`);
+
+        // Exercicio 8
+        // var base = Number(window.prompt("Digite a base: "));
+        // var altura = Number(window.prompt("Digite a altura: "));
+
+        // var area = base * altura;
+
+        // window.alert("A área é " + area + "m²");
+
+        // Exercicio 9
+        // var temperatura = Number(window.prompt("Digite a temperatura em celcius: "))
+        // var fahrenheit = (temperatura * 1.8) + 32
+
+        // window.alert("A temperatura em Fahrenheit é " + fahrenheit)
+
+        // Exercicio 10
+        // Solicitar ao usuário que insira as notas
+        // var nota1 = Number(window.prompt("Digite a nota 1: "));
+        // var nota2 = Number(window.prompt("Digite a nota 2: "));
+
+        // // Verificar se a primeira nota é divisível pela segunda nota
+        // if (nota1 % nota2 !== 0) {
+        //     window.alert("A nota " + nota1 + " não é divisível pela nota " + nota2 + ".");
+        // } else {
+        //     window.alert("A nota " + nota1 + " é divisível pela nota " + nota2 + ".");
+        // }
+
+
+
+
+        
+
+
 
     </script>
 </body>
